@@ -1,0 +1,136 @@
+body {
+  background: slategrey;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
+  margin: auto;
+  text-align: center;
+  color: rgb(235, 170, 151);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+div {
+  height: 250px;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  background: rgb(192, 206, 231);
+  border: solid 2px rgb(235, 170, 151);
+  margin: auto;
+  align-items: center;
+  flex-shrink: initial;
+  border-radius: 2px;
+}
+
+img {
+  height: calc(70% - 5px);
+  width: calc(60% - 5px);
+  flex-grow: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(88, 173, 162);
+  margin-top: 5px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: rgb(235, 170, 151);
+  text-shadow: 1px 0 10px lightgoldenrodyellow;
+}
+
+p {
+  margin: 5px;
+  color: slategrey;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  height: 15%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+  color: rgb(235, 170, 151);
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+svg:hover {
+    color:rgb(88, 173, 162);
+}
+
+input {
+    font-family: "Raleway", sans-serif;
+    margin-right: 10px;
+    margin-top: 5px;
+    background:rgb(192, 206, 231);
+    border: none;
+    border-radius: 2px;
+}
+
+span {
+    height: 200px;
+    width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 10vh;
+  }
+
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  li {
+    height: calc(33% - 5px);
+    width: calc(25% - 5px);
+    margin-right: 10px;
+  }
+
+  div {
+    width: 100%;
+    margin: auto;
+    border: solid 3px rgb(235, 170, 151);
+  }
+
+  svg {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  input{
+      height: 2em;
+      margin-top: 10px;
+  }
+}
